@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace App\Event;
+namespace App\Events;
 
 use App\Entity\Comment;
 use Symfony\Contracts\EventDispatcher\Event;
