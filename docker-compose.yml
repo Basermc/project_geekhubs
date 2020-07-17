@@ -6,7 +6,7 @@ services:
           context: .
           dockerfile: Dockerfile-nginx
       volumes:
-        - D:\project_geekhubs\symfony:/var/www/symfony/
+        - .\symfony:/var/www/symfony/
       ports:
         - 8001:80
       networks:
@@ -19,7 +19,7 @@ services:
         APP_ENV: dev
         DATABASE_URL: mysql://root:root@mysql:3306/symfony_db?serverVersion=5.7
       volumes:
-        - D:\project_geekhubs\symfony:/var/www/symfony/
+        - .\symfony:/var/www/symfony/
       networks:
         - symfony
       depends_on:
@@ -32,7 +32,7 @@ services:
       ports:
         - 3306:3306
       volumes:
-        - D:\project_geekhubs\mysql:/var/lib/mysql
+        - .\mysql:/var/lib/mysql
       networks:
         - symfony
 
