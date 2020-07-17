@@ -13,3 +13,5 @@ _en caso de tener la carpeta symfony vacia, deberemos de conectarnos a nuestro c
 _make install_symfony_demo, en caso de clonar el repositorio completo no hara falta_
 
 _cuando tengamos las depencias instaladas en nuestro contenedor php, entraremos por el navegador a la url localhost:8001_
+
+--
