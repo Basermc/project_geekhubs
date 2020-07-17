@@ -9,8 +9,6 @@ jobs:
         run: docker-compose up -d
       - name: Build the stack
         run: docker-compose up -d nginx
-      - name: install dependencies
-        run: docker exec -i project_geekhubs_php_1 bin/console doctrine:database:create 
     
       - name: Test
         run: docker run --network container:project_geekhubs_nginx_1 appropriate/curl -s --retry 10 --retry-connrefused http://localhost:8001/
